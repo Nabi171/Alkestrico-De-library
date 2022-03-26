@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Showbook from './Showbook/Showbook';
 import Cart from '../Cart/Cart';
+import '../Book/Book.css'
 
 const Book = () => {
     const [books, setBooks] = useState([]);
@@ -29,16 +30,20 @@ const Book = () => {
 
     return (
         <div className='row'>
-            <div className='col-6 col-sm-6'>
+            <div className='col-9 '>
 
-                {
-                    books.map(book => <Showbook book={book}
-                        addToCart={addToCart}
-                    ></Showbook>)
-                }
+                <div className='mt-4 ms-4 p-4' >
+                    <div className='book-container container'>
+                        {
+                            books.map(book => <Showbook book={book}
+                                addToCart={addToCart}
+                            ></Showbook>)
+                        }
+                    </div>
+                </div>
 
             </div>
-            <div className='col-6 col-sm-6'>
+            <div className='col-3'>
                 {/* <h1>Hlw</h1> */}
                 <Cart cart={cart}></Cart>
             </div>
