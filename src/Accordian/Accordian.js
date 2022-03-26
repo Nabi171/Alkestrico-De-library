@@ -1,54 +1,55 @@
 import React from 'react';
+import { Card, Table } from 'react-bootstrap';
 
 const Accordian = () => {
   return (
     <div>
-
-
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              How react works?
-      </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Accordion Item #2
-      </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Accordion Item #3
-      </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-          </div>
-        </div>
-      </div>
-
-
-
+      <Card className='mt-4 mx-3'>
+        <Card.Body>
+          <h5>HOW REACT WORKS??</h5><hr />
+          <p>React is a Library which works in plethora of DOM wise component to execute the codes like a tree.Its just a plain javascript which can convert HTML DOM as javascript component which works fast to execute the code.So, making client side api, it contained lots of component which are JSX function and DOM HTML component to execute the code.On the other hand, its a library which is maintained a tree of component which called by function from core javascript component to execute the its branches of tree components from working core component to execute the HTML DOM elements.</p>
+        </Card.Body>
+      </Card>
+      <Card className='mt-4 mx-3'>
+        <Card.Body>
+          <h5>HOW REACT WORKS??</h5><hr />
+          <Table striped bordered hover size="sm">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Props</th>
+                <th>State</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>In react props is one kinds of function argument and attributes in HTML DOM.</td>
+                <td>State can be defined as data to its components that can be changed data with user input,time,server or responses.</td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>2</td>
+                <td>Here data which are changes like immutable to execute its component.</td>
+                <td>Its data calls itself which are mutable.</td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>3</td>
+                <td>its data can be changed</td>
+                <td>its data can not be modified using this.setState</td>
+              </tr>
+            </tbody>
+          </Table>
+        </Card.Body>
+      </Card>
 
     </div>
   );
 };
 
 export default Accordian;
+
+
