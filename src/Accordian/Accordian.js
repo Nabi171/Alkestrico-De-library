@@ -42,6 +42,20 @@ const Accordian = () => {
                 <td>its data can not be modified using this.setState</td>
               </tr>
             </tbody>
+            <tbody>
+              <tr>
+                <td>4</td>
+                <td>its data passed from its parrent</td>
+                <td>its data data created its component</td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>4</td>
+                <td>its data passed from its parrent</td>
+                <td>its data data created its component</td>
+              </tr>
+            </tbody>
           </Table>
         </Card.Body>
       </Card>
