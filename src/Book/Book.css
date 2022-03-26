@@ -16,3 +16,90 @@
         grid-template-columns: repeat(2,1);
     }
 }
+
+@media only screen and (max-width: 600px) {
+
+    .book-container{
+    
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        margin-top: 50px 50px;
+        padding-top: 20px;
+        
+    
+}
+
+
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    .book-container{
+    
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        margin-top: 50px 50px;
+        padding-top: 20px;
+        background-color: #f5cac2;
+    
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+    .book-container{
+    
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        margin-top: 50px 50px;
+        padding-top: 20px;
+        background-color: #f5cac2;
+    
+}
+
+
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    .book-container{
+    
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        margin-top: 50px 50px;
+        padding-top: 20px;
+        background-color: #f5cac2;
+    
+}
+
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+
+    .book-container{
+    
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        margin-top: 50px 50px;
+        padding-top: 20px;
+        background-color: #f5cac2;
+    
+}
+
+
+
+}

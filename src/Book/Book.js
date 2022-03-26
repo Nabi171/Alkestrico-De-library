@@ -3,6 +3,8 @@ import Showbook from './Showbook/Showbook';
 import Cart from '../Cart/Cart';
 import '../Book/Book.css'
 
+
+
 const Book = () => {
     const [books, setBooks] = useState([]);
 
@@ -44,7 +46,6 @@ const Book = () => {
 
             </div>
             <div className='col-3'>
-                {/* <h1>Hlw</h1> */}
                 <Cart cart={cart}></Cart>
             </div>
         </div>
