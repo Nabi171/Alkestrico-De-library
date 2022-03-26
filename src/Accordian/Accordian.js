@@ -51,9 +51,9 @@ const Accordian = () => {
             </tbody>
             <tbody>
               <tr>
-                <td>4</td>
-                <td>its data passed from its parrent</td>
-                <td>its data data created its component</td>
+                <td>5</td>
+                <td>its class component is this.props</td>
+                <td>its class component is this.state</td>
               </tr>
             </tbody>
           </Table>
