@@ -60,6 +60,19 @@ const Accordian = () => {
         </Card.Body>
       </Card>
 
+      <Card className='mt-4 mx-3'>
+        <Card.Body>
+          <h5>HOW  USESTATE WORKS??</h5><hr />
+          <p>USESTATE is a react hook which pass the variable into the initial state to the function and which returns to the current state for updationg the value of functions to execute the component in its element.</p>
+        </Card.Body>
+      </Card>
+
+
+
+
+
+
+
     </div>
   );
 };
